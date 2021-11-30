@@ -50,17 +50,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "QtiTelephonyService",
-	owner: "lge",
-	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
 	name: "CoverDisplayHome",
 	owner: "lge",
 	apk: "proprietary/product/priv-app/CoverDisplayHome/CoverDisplayHome.apk",
@@ -121,30 +110,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "dpmserviceapp",
-	owner: "lge",
-	apk: "proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "qcrilmsgtunnel",
-	owner: "lge",
-	apk: "proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
 	name: "seccamservice",
 	owner: "lge",
 	apk: "proprietary/product/priv-app/seccamservice/seccamservice.apk",
@@ -154,24 +119,6 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
-}
-
-android_app_import {
-	name: "WfdService",
-	owner: "lge",
-	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "WfdCommon",
-	owner: "lge",
-	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
 dex_import {
@@ -184,15 +131,6 @@ dex_import {
 	name: "lge-res",
 	owner: "lge",
 	jars: ["proprietary/system/framework/lge-res/lge-res.apk"],
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.gnss@2.0-service-qti",
-	owner: "lge",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
 }
 
 prebuilt_etc_xml {
